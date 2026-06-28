@@ -17,7 +17,7 @@ const generateImage = async (req, res) => {
 
         // OpenAI DALL-E API ko request bhej rahe hain
         const response = await openai.images.generate({
-            model: "dall-e-3", // Aap dall-e-2 bhi use kar sakte hain fast/cheap results ke liye
+            model: "dall-e-2", // Aap dall-e-2 bhi use kar sakte hain fast/cheap results ke liye
             prompt: prompt,
             n: 1,
             size: "1024x1024",
